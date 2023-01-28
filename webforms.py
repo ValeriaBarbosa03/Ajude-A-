@@ -29,9 +29,6 @@ class UserForm(FlaskForm):
     profile_picture = FileField("Foto de Perfil")
     submit = SubmitField("Enviar")
 
-class Form(FlaskForm):
-    name= StringField("Qual seu nome?", validators=[DataRequired()])
-    submit = SubmitField("Enviar")
 
 class SearchForm(FlaskForm):
     searched = StringField("Pesquisar", validators=[DataRequired()])
