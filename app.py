@@ -29,7 +29,6 @@ migrate = Migrate(app,db)
 class Campanhas(db.Model):
     id = db.Column(db.Integer, primary_key = True, autoincrement=True)
     title = db.Column(db.String(255), nullable=False)
-    #author = db.Column(db.String(255), nullable=False)
     finality = db.Column(db.String(255), nullable=False)
     goal = db.Column(db.Integer, nullable=False)
     slug = db.Column(db.String(255), nullable=False)
